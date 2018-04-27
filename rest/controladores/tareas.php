@@ -141,7 +141,7 @@ class tareas {
           $query->bindParam(3,$tarea->descripcion);
           $query->bindParam(4,$tarea->fecha);
           $query->bindParam(5,$tarea->unidad);
-          $query->bindParam(6,$tarea->idAlumno);
+          $query->bindParam(6,$idAlumno);
 
   
           $query->execute();
