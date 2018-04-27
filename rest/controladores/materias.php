@@ -154,7 +154,7 @@ class materias {
 
         $query->bindParam(1,$materia->clave);
         $query->bindParam(2,$materia->nombre);
-        $query->bindParam(3,$materia->idAlumno);
+        $query->bindParam(3,$idAlumno);
 
         $query->execute();
 
