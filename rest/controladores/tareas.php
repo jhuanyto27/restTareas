@@ -1,5 +1,29 @@
 <?php
 
+/**
+ * Acceder al recurso tarea
+ * GET
+ * http://localhost/PHP/proyectoTareas/tareas
+ * 
+ * Registro de tarea
+ * POST
+ * http://localhost/PHP/proyectoTareas/tareas/registro
+ * 
+ * Obtener tarea por id
+ * GET
+ * http://localhost/PHP/proyectoTareas/tareas/[1]
+ * 
+ * Modificar tarea
+ * PUT
+ * http://localhost/PHP/proyectoTareas/tareas/[1]
+ * 
+ * Eliminar tarea
+ * DELETE
+ * http://localhost/PHP/proyectoTareas/tareas/[1]
+ * 
+ * 
+ */
+
 class tareas {
     const NOMBRE_TABLA = "tareas";
     const CLAVE = "idTarea";
