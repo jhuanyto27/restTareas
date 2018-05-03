@@ -12,13 +12,13 @@
  *
  Obtener materia por id
  * GET
- * localhost/~instructor/restDocente/materia/[id]
+ * localhost/~instructor/restDocente/materias/[id]
  Modificar materias
  * PUT
- * localhost/~instructor/restDocente/materia/[id]
+ * localhost/~instructor/restDocente/materias/[id]
  Eliminar materias
  * DELETE
- * localhost/~instructor/restDocente/materia/[id]
+ * localhost/~instructor/restDocente/materias/[id]
  */
 /**
  *
