@@ -1,6 +1,31 @@
 <?php
 //profesores.php
 
+/**
+ * Acceder al recurso profesor
+ * GET
+ * http://localhost/PHP/proyectoTareas/profesores
+ * 
+ * Registro de profesor
+ * POST
+ * http://localhost/PHP/proyectoTareas/profesores/registro
+ * 
+ * Obtener profesor por id
+ * GET
+ * http://localhost/PHP/proyectoTareas/profesores/[1]
+ * 
+ * Modificar profesor
+ * PUT
+ * http://localhost/PHP/proyectoTareas/profesores/[1]
+ * 
+ * Eliminar profesor
+ * DELETE
+ * http://localhost/PHP/proyectoTareas/profesores/[1]
+ * 
+ * 
+ */
+
+
 class profesores {
     const NOMBRE_TABLA = "profesores";
     const CLAVE = "idProfesor";
