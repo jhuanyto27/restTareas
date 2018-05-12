@@ -125,11 +125,19 @@ class materias {
         $query->bindParam(2,$claveMateria,PDO::PARAM_STR);
       }
       if ($query->execute()) {
-        http_response_code(200);
-        return [
-          "estado" => "OK",
-          "mensaje" => $query->fetchAll(PDO::FETCH_ASSOC)
-        ];
+        if ($query->rowCount() > 0) { 
+          http_response_code(200);
+          return [
+            "estado" => "OK",
+            "mensaje" => $query->fetchAll(PDO::FETCH_ASSOC)
+          ];
+        } else {
+          http_response_code(400);
+          return [
+            "estado" => "Error",
+            "mensaje" => "No se encontro la Tarea"
+          ];
+        }
       } else {
         throw new ExceptionApi("Error en consulta",
                 "Se ha producido un error al ejecutar la consulta");
